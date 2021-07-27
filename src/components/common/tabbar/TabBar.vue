@@ -21,6 +21,7 @@ export default {
   right: 0;
   bottom: 0;
   font-size: 10px;
+  z-index: 10;
 }
 
 </style>
