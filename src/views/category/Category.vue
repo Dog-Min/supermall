@@ -1,11 +1,125 @@
 <template>
-  <div>种类</div>
+  <div class="wrapper">
+    <ul>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    <li>liebiao</li>
+    </ul>
+  </div>
 </template>
 
 <script>
+import BScroll from 'better-scroll'
 export default {
- name:"Category"
+ name:"Category",
+ mounted(){
+   new BScroll('.wrapper',{
+
+   })
+ }
 }
 </script>
 <style  scoped>
+.wrapper{
+  height: 150px;
+  background-color: blueviolet;
+
+}
 </style>

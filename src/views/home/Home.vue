@@ -11,10 +11,11 @@
 
     <feature-view></feature-view>
 
-    <tab-control :titles = "['流行','新款','精选']" class="TabControl">
+    <tab-control :titles = "['流行','新款','精选']" 
+      class="TabControl" @toTransferIndex = "showIndex">
     </tab-control>
-    <!-- <goods-list :goods="goods['pop'].list">
-    </goods-list> -->
+    <goods-list :goods="showGoods">
+    </goods-list>
     <p>666</p>
     <p>666</p>
     <p>666</p>
@@ -72,6 +73,8 @@ export default {
  name:"Home",
  data(){
    return {
+     goodstype:['pop','new','sell'],
+     index:0,
      banners:[],
      recommends:[],
      goods:{
@@ -91,6 +94,7 @@ export default {
   GoodsList
  },
  methods:{
+  //  网路请求的方法
    //请求数据
    getHomeMultidata(){
      getHomeMultidata().then(res =>{
@@ -108,6 +112,17 @@ export default {
        this.goods[type].list.push(...res.data.data.list)
        this.goods[type].page +=1
    })
+   },
+
+  //切换代码
+   showIndex(index){
+     this.index = index
+     console.log(this.goodstype[this.index])
+   }
+ },
+ computed:{
+   showGoods(){
+     return this.goods[this.goodstype[this.index]].list
    }
  },
  //生命周期函数钩子函数
@@ -118,6 +133,7 @@ export default {
    this.getHomeGoods('pop')
    this.getHomeGoods('new')
    this.getHomeGoods('sell')
+   //console.log(this.goodschange[0])
  }
     
 }

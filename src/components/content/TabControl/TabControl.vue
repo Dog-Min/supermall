@@ -12,16 +12,16 @@
 <script>
 export default {
   name:"TabControl",
-  components:{},
   data(){
     return{
-      currentindex:0
+      currentindex:0,
     }
   },
   methods:{
     changeSta(index){
-      this.currentindex = index
-    }
+      this.currentindex = index;
+      this.$emit("toTransferIndex",index)
+    },
   },
   props:{
     titles:{
@@ -29,7 +29,7 @@ export default {
       default(){
         return []
       }
-    }
+    },
   }
 }
 </script>
